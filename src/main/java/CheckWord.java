@@ -22,12 +22,9 @@ public class CheckWord {
       model.put("template", "templates/results.vtl");
     
       String sentence = request.queryParams("sentence");
-     
-    
       String getChanged = getChanged(sentence);
     
-      model.put("sentence", sentence);
-     
+      model.put("sentence", sentence); 
       model.put("getChanged", getChanged(sentence));
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
@@ -36,7 +33,6 @@ public class CheckWord {
   public static String getChanged(String sentence){
         String newString = " ";
         newString = sentence.replaceAll( "[aeiouAEIOU]", "-" );
-        
         return newString;
 
   }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CheckWordTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-08-14T16:57:19" hostname="josss-MacBook-Pro.local" time="0.0">
+<testsuite name="CheckWordTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-08-14T17:23:59" hostname="josss-MacBook-Pro.local" time="0.001">
   <properties/>
   <testcase name="getChanged_returnsUserStringWithVowelsReplacedWith_Dash_String" classname="CheckWordTest" time="0.0"/>
   <testcase name="getChangedLower_returnsUserStringWithVowelsReplacedRegardlessOfCase_String" classname="CheckWordTest" time="0.0"/>

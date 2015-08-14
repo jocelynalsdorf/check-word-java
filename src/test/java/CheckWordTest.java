@@ -10,6 +10,7 @@ public class CheckWordTest {
       String answer = "th-s -s -n -x-mpl-";
       assertEquals(answer, testCheckWord.getChanged(sentence));
   }
+
   @Test
   public void getChangedLower_returnsUserStringWithVowelsReplacedRegardlessOfCase_String() {
       CheckWord testCheckWord = new CheckWord();
@@ -17,5 +18,4 @@ public class CheckWordTest {
       String answer = "TH-S -s -n -X-MPL-";
       assertEquals(answer, testCheckWord.getChanged(sentence));
   }
-
 }
