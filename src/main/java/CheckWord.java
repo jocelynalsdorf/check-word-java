@@ -7,7 +7,7 @@ import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 import static spark.Spark.*;
 
-public class ProgramName {
+public class CheckWord {
   public static void main(String[] args) {
     // staticFileLocation("/public");
     // String layout = "templates/layout.vtl";
@@ -22,33 +22,23 @@ public class ProgramName {
     //   model.put("template", "templates/results.vtl");
     
     //   String something = request.queryParams("something");
-    //   String somethingElse = request.queryParams("somethingElse");
+    //  
     
     //   Integer getMethodName = getMethodName(something, somethingElse);
     
     //   model.put("something", something);
-    //   model.put("somethingElse", somethingElse);
+    //  
     //   model.put("getMethodName", getMethodName(something, somethingElse));
     //   return new ModelAndView(model, layout);
     // }, new VelocityTemplateEngine());
 
   }
-  public static Integer getMethodName(String something, String somethingElse){
-        String sentence = something.toLowerCase();
-        String word = somethingElse.toLowerCase();
-        Integer repeats = 0;
-        List<String> myList = Arrays.asList(sentence.split(" "));
+  public static String getChanged(String sentence){
+        String newString = " ";
+        newString = sentence.replaceAll( "[aeiou]", "-" );
         
-        for(Object temp : myList) {
-            if(temp.equals(word)) {
-                repeats += 1;
-            } 
-           
-        }
 
-
-         return repeats;
-
+        return newString;
 
   }
 }
