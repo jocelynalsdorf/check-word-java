@@ -21,12 +21,12 @@ public class AppTest extends FluentTest{
     assertThat(pageSource()).contains("Word Changer");
   }
   
-  // @Test
-  // public void getchangedword(){
-  //   goTo("http://localhost:4567/");
-  //   fill("#sentence").with("they are nice");
-  //   submit(".btn");
-  //   assertThat(pageSource()).contains("th-y -re n-c-");
-  // }
+  @Test
+  public void getchangedword(){
+    goTo("http://localhost:4567/");
+    fill("#sentence").with("they are nice");
+    submit(".btn");
+    assertThat(pageSource()).contains("th-y -r- n-c-");
+  }
 
 }
