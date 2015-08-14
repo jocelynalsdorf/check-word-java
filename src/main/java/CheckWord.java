@@ -35,9 +35,8 @@ public class CheckWord {
   }
   public static String getChanged(String sentence){
         String newString = " ";
-        newString = sentence.replaceAll( "[aeiou]", "-" );
+        newString = sentence.replaceAll( "[aeiouAEIOU]", "-" );
         
-
         return newString;
 
   }
