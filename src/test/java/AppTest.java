@@ -28,5 +28,12 @@ public class AppTest extends FluentTest{
     submit(".btn");
     assertThat(pageSource()).contains("th-y -r- n-c-");
   }
+  @Test
+  public void getchangedUpperCasedWord(){
+    goTo("http://localhost:4567/");
+    fill("#sentence").with("THEY ARE NICE");
+    submit(".btn");
+    assertThat(pageSource()).contains("TH-Y -R- N-C-");
+  }
 
 }
