@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CheckWordTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-08-14T16:38:56" hostname="josss-MacBook-Pro.local" time="0.003">
+<testsuite name="CheckWordTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-08-14T16:43:15" hostname="josss-MacBook-Pro.local" time="0.003">
   <properties/>
-  <testcase name="getChanged_returnsUserStringWithVowelsReplacedWith_Dash_String" classname="CheckWordTest" time="0.002"/>
-  <testcase name="getChangedLower_returnsUserStringWithVowelsReplacedRegardlessOfCase_String" classname="CheckWordTest" time="0.001"/>
+  <testcase name="getChanged_returnsUserStringWithVowelsReplacedWith_Dash_String" classname="CheckWordTest" time="0.003"/>
+  <testcase name="getChangedLower_returnsUserStringWithVowelsReplacedRegardlessOfCase_String" classname="CheckWordTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
